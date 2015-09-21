@@ -25,3 +25,10 @@ def add_bang(array)
 	  end
 end
 puts add_bang(["hi", "mom"])
+
+def sum(array)
+	array.inject do |sum, num| 
+		sum + num
+	end
+end
+puts sum([1, 1, 2, 3, 5])
