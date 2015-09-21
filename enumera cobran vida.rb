@@ -32,3 +32,11 @@ def sum(array)
 	end
 end
 puts sum([1, 1, 2, 3, 5])
+
+def sorted_triples(array)
+	array.each_slice(3) do |words| 
+		p words.sort
+	end
+end
+words = %w(De esta simple manera se puede reorganizar una oracion)  
+p sorted_triples(words) == [["De", "esta", "simple"], ["manera", "puede", "se"], ["oracion", "reorganizar", "una"]]
